@@ -1,0 +1,139 @@
+
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+}
+
+.todo {
+  padding: 20px;
+}
+
+.add_task_btn {
+  padding: 15px 30px;
+  background-color: orangered;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add_task_btn:hover {
+  background-color: orange;
+}
+
+.todo_data {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.kanban-column {
+  flex: 1;
+  background-color: #e9ecef;
+  border-radius: 5px;
+  padding: 10px;
+  min-height: 300px;
+}
+
+.kanban-column h3 {
+  text-align: center;
+  font-size: 18px;
+}
+
+.kanban-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: #fff;
+  position: relative;
+}
+
+.task-details {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.delete-task-button {
+  position: absolute;
+  top: 50px;
+  right: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #ff0000;
+}
+
+.delete-task-button:hover {
+  background-color: #a71d2a;
+}
+
+/* Modal Styling */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  width: 400px;
+  max-width: 90%;
+  text-align: center;
+}
+
+.modal_inp_task{
+  padding: 10px 30px;
+  border: 2px solid orangered;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.modal-actions {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.save-task-button,
+.cancel-task-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.save-task-button {
+  background-color: orangered;
+  color: #fff;
+}
+
+.save-task-button:hover {
+  background-color: #218838;
+}
+
+.cancel-task-button {
+  background-color: #6c757d;
+  color: #fff;
+}
+
+.cancel-task-button:hover {
+  background-color: #5a6268;
+}
